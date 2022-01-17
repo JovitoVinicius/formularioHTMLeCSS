@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+    <title>Gardana Store - Cadastro de cliente!</title>
+</head>
+<body>
+    
+        <div class="campo">
+        <h1 id = "titulo">Cadastro de cliente</h1>
+        <p id = "subtitulo">Complete os campos com suas informações</p>
+        </div>
+        <form>
+           <fieldset class="grupo">
+               <div  class="campo">
+                   <label for="nome">
+                      <strong>Nome </strong>
+                    </label>
+                <input type="text" name= "nome" id="nome" required>
+                </div>
+               <div class="campo">
+                <label for="sobrenome">
+                    <strong>Sobrenome </strong>                    
+                </label>
+                <input type="text" name= "sobrenome" id="sobrenome" required>
+                </div>
+           </fieldset> 
+           <div class="campo">
+            <label for="e-mail">
+                <strong>E-mail</strong>                
+            </label>
+                <input type="email" name= "e-mail" id= "e-mail" required>
+        </div>
+        <div class="campo">
+            <label>
+                <strong>Qual produto mais chamou sua atenção na página da Gardana Store?</strong>                 
+            </label>
+            <label for="vasos">
+                <input type="radio" name="vasos" value="vasos"> Vasinhos
+            </label>
+            <label for="arranjos">
+                <input type="radio" name="arranjos" value = "arranjos"> Arranjos
+            </label>
+            <label for="suculenta">
+                <input type="radio" name = "suculenta" value = "suculenta"> Suculentas
+            </label>
+        </div>
+        <div class="campo">
+            <label for="localidade">
+                <strong>De onde você é?</strong>                
+            </label>
+            <select name="localidade" id="uf">
+                <option selected disabled value="">Selecione</option> 
+                <option>Roraima - RR</option>
+                <option>Acre - AC</option>
+                <option>Amazonas - AM</option>
+                <option>Rontônia - RO</option>
+                <option>Pará - PA</option>
+                <option>Amapá - AP</option>
+                <option>Tocantins - TO</option>
+                <option>Maranhão - MA</option>
+                <option>Piauí - PI</option>
+                <option>Ceará - CE</option>
+                <option>Rio Grande do Norte - RN</option>
+                <option>Paraíba - PB</option>
+                <option>Pernambuco - PE</option>
+                <option>Alagoas - AL</option>
+                <option>Sergipe - SE</option>
+                <option>Bahia - BA</option>
+                <option>Minas Gerais - MG</option>
+                <option>Espírito Santos - ES</option>
+                <option>Rio de Janeiro - RJ</option>
+                <option>São Paulo - SP</option>
+                <option>Paraná - PR</option>
+                <option>Mato Grosso - MT</option>
+                <option>Mato Grosso do Sul - MS</option>
+                <option>Santa Catarina - SC</option>
+                <option>Rio Grande do Sul - RS</option>
+                <option>Goiás - GO - MS</option>
+                <option>Distrito Federal - DF</option>
+            </select>
+        </div>
+        <br>
+        <fieldset class="grupo">
+            <div id="check">
+                <label>
+                    <strong>Selecione quais produtos você recomendaria para um amigo: <br><br></strong>                    
+                </label>
+                <input type ="checkbox" id = "vasos" nome = "vasos" value = "vasos">
+                <label for="vasos"> Vasinhos Decorativos</label>
+                <input type="checkbox" id = "arranjos" nome = "arranjos" value = "arranjos">
+                <label for="arranjos"> Arranjos</label>
+                <input type="checkbox" id = "suculenta" nome = "suculenta" value= "suculenta">
+                <label for="suculenta"> Suculentas</label>
+                <input type="checkbox" id = "cactos" nome = "cactos" value = " cactos">
+                <label for="cactos"> Cactos</label>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <br>
+            <label for="sugestao">
+                <strong>Tem sugestões, criticas ou reclamação a fazer? Digite abaixo.</strong>                
+            </label>
+            <textarea name="sugestao" id="sugestao" rows="10" ></textarea>
+        </div>
+        <button class="botao" type="submit">Enviar</button>
+        </form>
+</body>
+</html>
